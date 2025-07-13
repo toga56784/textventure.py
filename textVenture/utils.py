@@ -1,7 +1,7 @@
 import sys
 import time
 
-def slow_print(s, d=0.1):
+def slow_print(s: str, d: float = 0.1) -> None:
     """
     Print text to the terminal one character at a time with a delay.
 
@@ -17,7 +17,7 @@ def slow_print(s, d=0.1):
         time.sleep(d)
     print()
 
-def vert_print(s, d=0):
+def vert_print(s: str, d: float = 0) -> None:
     """
     Prints text one character at a time vertically with an optional delay.
 
@@ -32,7 +32,7 @@ def vert_print(s, d=0):
         print(c)
         time.sleep(d)
 
-def kill():
+def kill() -> None:
     """
     Imediately ends the session.
 
