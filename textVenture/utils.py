@@ -15,14 +15,15 @@ def slow_print(s, d=0.1):
     for c in s:
         print(c, end='', flush=True)
         time.sleep(d)
+    print()
 
-def vert_print(s, d=None):
+def vert_print(s, d=0):
     """
     Prints text one character at a time vertically with an optional delay.
 
     Args:
         s (str): The string to print.
-        d (float, optional): Time in seconds to wait between characters. Defaults to none.
+        d (float, optional): Time in seconds to wait between characters. Defaults to 0.
     
     Returns:
         None
