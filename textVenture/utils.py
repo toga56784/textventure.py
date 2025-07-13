@@ -10,3 +10,7 @@ def vert_print(s, d=None):
     for c in s:
         print(c)
         time.sleep(d)
+
+def kill():
+    print("Session terminated.")
+    sys.exit()
